@@ -102,10 +102,17 @@ alert(`counter = ${counter}; a = ${a}`); // counter = 3; a = 3
 let counter = 2;
 let a = counter++; // counter++ returns OLD value of counter to a
 alert(`counter = ${counter}; a = ${a}`); // counter = 3; a = 2
-*/
 
 // Postfix VS Prefix Increment
 let counter = 0;
 alert(++counter); // 1, Prefix to use new value immediately
 counter = 0;
 alert(counter++); // 0, Postfix to use the old value and later the new value
+
+// Increment/decrement among other operators
+let counter = 1;
+alert(3 * ++counter); // 6
+
+let counter = 1;
+alert(3 * counter++); // 3, because counter++ returns OLD value
+*/
