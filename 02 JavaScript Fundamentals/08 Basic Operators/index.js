@@ -115,4 +115,32 @@ alert(3 * ++counter); // 6
 
 let counter = 1;
 alert(3 * counter++); // 3, because counter++ returns OLD value
+
+// Bitwise Operators: AND (&), OR (|), XOR (^), NOT(~), Shift Left (<<), Shift Right (>>)
+let n1 = 3;
+let n2 = 4;
+alert(`${n1} = ${n1.toString(2)}; ${n2} = ${n2.toString(2)};`); // Convert decimal to binary
+
+// AND (&): Both should be 1, otherwise 0
+let n1 = 3; // 011 or 11
+let n2 = 6; // 110
+alert(n1.toString(2) & n2.toString(2)); // 010 or 10
+alert(n1 & n2); // 2
+
+// OR (|): If there's 1, then 1, otherwise 0
+let n1 = 4; // 100
+let n2 = 6; // 110
+alert(n1.toString(2) | n2.toString(2)); // 110
+alert(n1 | n2); // 6
+
+// Exclusive OR/XOR (^): There's only be single 1 to be resulted to 1, otherwise 0
+let n1 = 4; // 100
+let n2 = 6; // 110
+alert(n1.toString(2) ^ n2.toString(2)); // 010 or 10
+alert(n1 ^ n2); // 2
 */
+
+// NOT (~): formula is x = -(x+1)
+let n = 5; // 101
+alert(~n.toString(2)); // -102 <= -(101+1)
+alert(~n); // -6 <= -(5+1)
