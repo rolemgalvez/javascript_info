@@ -159,9 +159,24 @@ alert(givenPermissionToPerson & DeletePermission); // 1, means equal to DeletePe
 alert(8 >> 2);
 // 1000 (binary) >> 2 (move 2 place to right)
 // 10 (binary) or 2 (decimal) - leaving 10 after shifting to right
-*/
 
 // Shifting Left (<<) : shifting values to left (causing adding of 0) or making decimal value exponential to 2s
 alert(8 << 2);
 // 1000 (binary) << 2 (move 2 place to left)
 // 100000 (binary) or 32 (decimal) - adding two 0s at the right
+*/
+
+// Using Shifting on colors
+// FF3300 => RGB - 24bits values, 8bits Red, 8bits Green, 8bits Blue
+// To get GREEN value, shift right by 8 & use AND by 11111111 (255)
+// 111111110011001100000000 >> 8 = 1111111100110011
+// 1111111100110011 &
+// 0000000011111111 =
+//         00110011
+// So the GREEN value is 00110011
+
+let color = 0xff3300; // how to call a hexadecimal value in JS
+let noBlue = color >> 8;
+let green = noBlue & 255;
+alert(`${green}: ${green.toString(2)}`); // 51: 110011
+alert(`GREEN in ${color.toString(16)} is ${green.toString(16)}`); // 33
