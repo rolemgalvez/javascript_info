@@ -138,9 +138,20 @@ let n1 = 4; // 100
 let n2 = 6; // 110
 alert(n1.toString(2) ^ n2.toString(2)); // 010 or 10
 alert(n1 ^ n2); // 2
-*/
 
 // NOT (~): formula is x = -(x+1)
 let n = 5; // 101
 alert(~n.toString(2)); // -102 <= -(101+1)
 alert(~n); // -6 <= -(5+1)
+*/
+
+// Using Bitwise for permission: Example - Read, Write, Delete
+let givenPermissionToPerson = 5; // 101
+
+let ReadPermission = 4; // 100
+let WritePermission = 2; // 010
+let DeletePermission = 1; // 001
+
+alert(givenPermissionToPerson & ReadPermission); // 4, means equal to ReadPermission
+alert(givenPermissionToPerson & WritePermission); // 0, means NOT equal to WritePermission
+alert(givenPermissionToPerson & DeletePermission); // 1, means equal to DeletePermission
