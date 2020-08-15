@@ -143,7 +143,6 @@ alert(n1 ^ n2); // 2
 let n = 5; // 101
 alert(~n.toString(2)); // -102 <= -(101+1)
 alert(~n); // -6 <= -(5+1)
-*/
 
 // Using Bitwise for permission: Example - Read, Write, Delete
 let givenPermissionToPerson = 5; // 101
@@ -155,3 +154,14 @@ let DeletePermission = 1; // 001
 alert(givenPermissionToPerson & ReadPermission); // 4, means equal to ReadPermission
 alert(givenPermissionToPerson & WritePermission); // 0, means NOT equal to WritePermission
 alert(givenPermissionToPerson & DeletePermission); // 1, means equal to DeletePermission
+
+// Shift Right (>>) - shifting binary values to right (causing removal of values)
+alert(8 >> 2);
+// 1000 (binary) >> 2 (move 2 place to right)
+// 10 (binary) or 2 (decimal) - leaving 10 after shifting to right
+*/
+
+// Shifting Left (<<) : shifting values to left (causing adding of 0) or making decimal value exponential to 2s
+alert(8 << 2);
+// 1000 (binary) << 2 (move 2 place to left)
+// 100000 (binary) or 32 (decimal) - adding two 0s at the right
