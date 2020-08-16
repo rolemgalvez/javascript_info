@@ -164,7 +164,6 @@ alert(8 >> 2);
 alert(8 << 2);
 // 1000 (binary) << 2 (move 2 place to left)
 // 100000 (binary) or 32 (decimal) - adding two 0s at the right
-*/
 
 // Using Shifting on colors
 // FF3300 => RGB - 24bits values, 8bits Red, 8bits Green, 8bits Blue
@@ -180,3 +179,51 @@ let noBlue = color >> 8;
 let green = noBlue & 255;
 alert(`${green}: ${green.toString(2)}`); // 51: 110011
 alert(`GREEN in ${color.toString(16)} is ${green.toString(16)}`); // 33
+
+// Comma
+let a = (1 + 2, 3 + 4); // Result of 1 + 2 is ignored
+alert(a);
+
+let b = 0;
+(b = 1 + 2), 3 + 4; // By rule of precedence, comma is low priority
+alert(b);
+
+// Sense of using Comma
+(a = 1), (b = 2), (c = a + b); // Ignoring assigned values on result and only getting the last one
+alert(c);
+
+// Task 1 (The postfix and prefix forms)
+let a = 1,
+  b = 1;
+
+let c = ++a; // 2
+let d = b++; // 1
+
+// Task 2 (Assignment result)
+let a = 2;
+
+let x = 1 + (a *= 1); // 5
+
+// Task 3 (Type conversions)
+alert("" + 1 + 0); // "10" -> Right to left
+alert("" - 1 + 0); // -1 -> empty string becomes 0 in subtraction
+alert(true + false); // 1
+alert(6 / "3"); // 2
+alert("2" * "3"); // 6
+alert(4 + 5 + "px"); // "9px"
+alert("$" + 4 + 5); // "$45"
+alert("4" - 2); // 2
+alert("4px" - 2); // NaN
+alert(7 / 0); // Infinity
+alert("  -9  " + 5); // "  -9   5"
+alert("  -9  " - 5); // -14
+alert(null + 1); // 1 -> null becomes 0 in a numeric expression
+undefined + 1; // NaN -> undefined becomes NaN in a numeric expression
+" \t \n" - 2; // -2 -> trimmed characters act like empty string to it becomes 0
+
+// Task 4 (Fix the addition)
+let a = +prompt("First number?", 1);
+let b = +prompt("Second number?", 2);
+// Number() can also convert string to number
+alert(a + b); // 12
+*/
