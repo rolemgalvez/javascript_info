@@ -33,7 +33,6 @@ alert("" == false); // true
 // and have these:
 alert(0 === false); // fa3se
 alert("" === false); // false
-*/
 
 // these is same sense in not equality:
 alert(0 != false); // false
@@ -41,3 +40,13 @@ alert("" != false); // false
 // having string inequality
 alert(0 !== false); // true
 alert("" !== false); // true
+
+// Comparison with null and undefined
+alert(null == undefined); // true
+alert(null === undefined); // false
+*/
+
+// Equality check == and comparisons > < >= <= work differently
+alert(null > 0); // false, in comparisons, null converted to 0
+alert(null == 0); // false, in equality check, null is null and undefined is undefined
+alert(null >= 0); // true, again, null converted to 0
