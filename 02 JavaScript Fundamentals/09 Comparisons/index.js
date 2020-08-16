@@ -26,4 +26,18 @@ alert(a == b); // true
 // Boolean expression use different set of rules
 alert(Boolean(a)); // false
 alert(Boolean(b)); // true
+
+// Strict Equality (===) which no type conversion - to avoid these kind of problem:
+alert(0 == false); // true
+alert("" == false); // true
+// and have these:
+alert(0 === false); // fa3se
+alert("" === false); // false
 */
+
+// these is same sense in not equality:
+alert(0 != false); // false
+alert("" != false); // false
+// having string inequality
+alert(0 !== false); // true
+alert("" !== false); // true
