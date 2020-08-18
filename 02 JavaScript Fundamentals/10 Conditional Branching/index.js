@@ -32,7 +32,6 @@ if (answer == 2) {
 } else {
   alert("Wrong!");
 }
-*/
 
 // if else
 let answer = prompt("1 + 1 is?", "");
@@ -43,3 +42,36 @@ if (answer < 2) {
 } else {
   alert("That's enough");
 }
+
+// Conditional Operator "?"
+// Assigning value to a variable based from input
+
+// Longer Way:
+let accessAllowed;
+let age = prompt("How old are you?", "");
+if (age >= 18) {
+    accessAllowed = true;
+} else {
+    accessAllowed = false;
+}
+
+// Shorter Way
+let age = prompt("How old are you?", "");
+let accessAllowed = age >= 18 ? true : false;
+
+// Multiple "?"
+let age = prompt("How old are you?", "");
+let message =
+  age < 3
+    ? "Hi baby!"
+    : age < 18
+    ? "Hello there!"
+    : age < 100
+    ? "Greetings!"
+    : "What an unusual age!";
+*/
+
+// NOT Recommended way of using "?"
+let answer = prompt("What is 2 + 2?", "");
+answer == 4 ? alert("You're right") : alert("Wrong.");
+// "?" purpose is to assign value to another based on a condition. Use it for that for readability also
