@@ -44,9 +44,23 @@ alert("" !== false); // true
 // Comparison with null and undefined
 alert(null == undefined); // true
 alert(null === undefined); // false
-*/
 
 // Equality check == and comparisons > < >= <= work differently
 alert(null > 0); // false, in comparisons, null converted to 0
 alert(null == 0); // false, in equality check, null is null and undefined is undefined
 alert(null >= 0); // true, again, null converted to 0
+
+// Incomparable undefined
+alert(undefined > 0); // false, comparison converts undefined into NaN
+alert(undefined <= 0); // false
+alert(undefined == 0); // false, equality check converts undefined into null
+
+// Tasks: Result of expressions
+5 > 4 // true
+"apple" > "pineapple" // false
+"2" > "12" // false
+undefined == null // true
+undefined === null // false
+null == "\n0\n" // false
+null === +"\n0\n" // false
+*/
