@@ -24,7 +24,6 @@ let correctAnswer = answer == 2;
 if (correctAnswer) {
   alert("Hooray!");
 }
-*/
 
 // else
 let answer = prompt("1 + 1 is?", "");
@@ -32,4 +31,15 @@ if (answer == 2) {
   alert("Correct!");
 } else {
   alert("Wrong!");
+}
+*/
+
+// if else
+let answer = prompt("1 + 1 is?", "");
+if (answer < 2) {
+  alert("Higher Please");
+} else if (answer > 2) {
+  alert("Lower Please");
+} else {
+  alert("That's enough");
 }
