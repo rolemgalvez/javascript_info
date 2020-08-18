@@ -7,7 +7,6 @@ if (answer == 2) {
   alert("You're right!");
   alert("How amazing of you!");
 }
-*/
 
 // Boolean conversion
 if (0) {
@@ -24,4 +23,13 @@ let answer = prompt("1 + 1 is?", "");
 let correctAnswer = answer == 2;
 if (correctAnswer) {
   alert("Hooray!");
+}
+*/
+
+// else
+let answer = prompt("1 + 1 is?", "");
+if (answer == 2) {
+  alert("Correct!");
+} else {
+  alert("Wrong!");
 }
