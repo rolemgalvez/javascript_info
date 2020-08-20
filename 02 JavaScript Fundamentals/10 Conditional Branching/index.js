@@ -69,9 +69,23 @@ let message =
     : age < 100
     ? "Greetings!"
     : "What an unusual age!";
-*/
 
 // NOT Recommended way of using "?"
 let answer = prompt("What is 2 + 2?", "");
 answer == 4 ? alert("You're right") : alert("Wrong.");
 // "?" purpose is to assign value to another based on a condition. Use it for that for readability also
+
+// TASKS: if (a string with zero)
+if ("0") {
+  // Will alert
+  alert("Henlo");
+}
+*/
+
+// TASKS: The name of JavaScript
+let answer = prompt('What\'s the "official" name of JavaScript?', "");
+if (answer == "ECMAScript") {
+  alert("Right!");
+} else {
+  alert("Didn't know? ECMAScript!");
+}
