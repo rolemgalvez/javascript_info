@@ -81,16 +81,15 @@ if ("0") {
   alert("Henlo");
 }
 
-// TASKS: The name of JavaScript
+// TASK 1: The name of JavaScript
 let answer = prompt('What\'s the "official" name of JavaScript?', "");
 if (answer == "ECMAScript") {
   alert("Right!");
 } else {
   alert("Didn't know? ECMAScript!");
 }
-*/
 
-// TASKS: Show the sign
+// TASK 2: Show the sign
 let number = +prompt("Enter a number", 0);
 if (number > 0) {
   alert(1);
@@ -99,3 +98,10 @@ if (number > 0) {
 } else {
   alert(0);
 }
+*/
+
+// TASK 3: Rewrite 'if' into '?'
+let a = +prompt("Enter 1st number", 0);
+let b = +prompt("Enter 2nd number", 0);
+let result = a + b < 4 ? "Below" : "Over";
+alert(result);
