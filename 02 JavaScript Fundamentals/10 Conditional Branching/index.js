@@ -98,10 +98,22 @@ if (number > 0) {
 } else {
   alert(0);
 }
-*/
 
 // TASK 3: Rewrite 'if' into '?'
 let a = +prompt("Enter 1st number", 0);
 let b = +prompt("Enter 2nd number", 0);
 let result = a + b < 4 ? "Below" : "Over";
 alert(result);
+*/
+
+// TASK 4: Rewrite 'if..else' into '?'
+let login = prompt("Enter the word", "");
+let message =
+  login == "Employee"
+    ? "Hello"
+    : login == "Director"
+    ? "Greetings"
+    : login == ""
+    ? "No login"
+    : "";
+alert(message);
