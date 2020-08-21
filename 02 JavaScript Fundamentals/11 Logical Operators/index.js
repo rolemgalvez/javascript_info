@@ -21,7 +21,6 @@ let isWeekend = true;
 if (hour < 10 || hour > 18 || isWeekend) {
   alert("The office is closed.");
 }
-*/
 
 // OR “||” finds the first truthy value. Return last if all are false
 alert(1 || 0); // 1
@@ -34,3 +33,47 @@ let firstName = "";
 let lastName = "";
 let nickName = "SuperCoder";
 alert(firstName || lastName || nickName || "Anonymous"); // "SuperCoder"
+
+// Short-circuit evaluation
+true || alert("not printed");
+false || alert("printed");
+
+// AND (&&)
+alert(true && true); // true
+alert(true && false); // false
+alert(false && true); // false
+alert(false && false); // false
+
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+  alert("The time is 12:30");
+}
+
+if (1 && 0) {
+  // works like OR
+  alert("Won't show because result is false");
+}
+
+alert(1 && 0); // 0, returns the falsy value
+alert(null && 5); // null
+alert(0 && "No matter what"); // 0
+alert(1 && 2 && null && 3); // null
+alert(1 && 5); // 5, returns last value if there are NO falsy value
+alert(1 && 2 && 3); // 3
+
+// NOT (!)
+alert(!false); // true, reverse operand
+alert(!true); // false
+alert(!0); // true
+alert(!1); // false
+*/
+
+// !! convert to boolean values
+alert(!!"non-empty string"); // true
+alert(!!null); // false
+// same as Boolean() function
+alert(Boolean("non-empty string")); // true
+alert(Boolean(null)); // false
+
