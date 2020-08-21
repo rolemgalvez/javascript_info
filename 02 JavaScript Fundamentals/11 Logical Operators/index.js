@@ -68,7 +68,6 @@ alert(!false); // true, reverse operand
 alert(!true); // false
 alert(!0); // true
 alert(!1); // false
-*/
 
 // !! convert to boolean values
 alert(!!"non-empty string"); // true
@@ -77,3 +76,10 @@ alert(!!null); // false
 alert(Boolean("non-empty string")); // true
 alert(Boolean(null)); // false
 
+// TASK 1: What are the results?
+alert(null || 2 || undefined); // 2
+alert(alert(1) || 2 || alert(3)); // 1
+alert(1 && null && 2); // null
+alert(alert(1) && alert(2)); // 1, undefined
+alert(null || (2 && 3) || 4); // 3
+*/
