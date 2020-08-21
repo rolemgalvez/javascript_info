@@ -83,3 +83,9 @@ alert(1 && null && 2); // null
 alert(alert(1) && alert(2)); // 1, undefined
 alert(null || (2 && 3) || 4); // 3
 */
+
+// TASK 2: Check the range
+let age = prompt("Enter an age", "");
+let inclusiveAge = age >= 14 && age <= 19;
+let exclusiveAge1 = !inclusiveAge;
+let exclusiveAge2 = age < 14 || age > 19;
