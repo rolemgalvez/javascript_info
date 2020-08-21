@@ -82,10 +82,15 @@ alert(alert(1) || 2 || alert(3)); // 1
 alert(1 && null && 2); // null
 alert(alert(1) && alert(2)); // 1, undefined
 alert(null || (2 && 3) || 4); // 3
-*/
 
 // TASK 2: Check the range
 let age = prompt("Enter an age", "");
 let inclusiveAge = age >= 14 && age <= 19;
 let exclusiveAge1 = !inclusiveAge;
 let exclusiveAge2 = age < 14 || age > 19;
+*/
+
+// TASK 3: What is the result?
+if (-1 || 0) alert("first"); // "first"
+if (-1 && 0) alert("second"); //
+if (null || (-1 && 1)) alert("third"); // "third"
