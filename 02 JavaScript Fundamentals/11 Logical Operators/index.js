@@ -93,7 +93,6 @@ let exclusiveAge2 = age < 14 || age > 19;
 if (-1 || 0) alert("first"); // "first"
 if (-1 && 0) alert("second"); //
 if (null || (-1 && 1)) alert("third"); // "third"
-*/
 
 // TASK 4: Check the login
 let login = prompt("Login", "");
@@ -113,3 +112,4 @@ if (isAdmin) {
 } else {
   alert("I don't know you");
 }
+*/
