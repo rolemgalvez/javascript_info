@@ -88,9 +88,28 @@ let age = prompt("Enter an age", "");
 let inclusiveAge = age >= 14 && age <= 19;
 let exclusiveAge1 = !inclusiveAge;
 let exclusiveAge2 = age < 14 || age > 19;
-*/
 
 // TASK 3: What is the result?
 if (-1 || 0) alert("first"); // "first"
 if (-1 && 0) alert("second"); //
 if (null || (-1 && 1)) alert("third"); // "third"
+*/
+
+// TASK 4: Check the login
+let login = prompt("Login", "");
+let isAdmin = login == "Admin";
+if (isAdmin) {
+  let password = prompt("Passwprd", "");
+  let rightPassword = password == "TheMaster";
+  if (rightPassword) {
+    alert("Welcome");
+  } else if (password == "" || password == null) {
+    alert("Cancelled");
+  } else {
+    alert("Wrong Password");
+  }
+} else if (login == "" || login == null) {
+  alert("Cancelled");
+} else {
+  alert("I don't know you");
+}
