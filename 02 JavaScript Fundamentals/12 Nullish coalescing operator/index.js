@@ -22,9 +22,9 @@ let height = null;
 let width = undefined;
 let area = (height ?? 100) * (width ?? 50);
 alert(area); // 5000
-*/
 
 // Limitation of ?? - forbidden to use with && and || for safety reason
 let x = 1 && 2 ?? 3; // syntax error
 let x = (1 && 2) ?? 3; // use parenthesis as work around
 alert(x); // 2
+*/
