@@ -18,3 +18,10 @@ while (i) {
 let i = 3;
 while (i) alert(i--);
 */
+
+// do...while - first run in the body, then check condition if execute it again
+let i = 0;
+do {
+  alert(i);
+  i++;
+} while (i < 3);
