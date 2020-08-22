@@ -16,10 +16,15 @@ alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // SuperCoder
 let height = 0;
 alert(height || 100); // 100, || returns the first TRUTHY value
 alert(height ?? 100); // 0, || returns the first DEFINED value
-*/
 
 // Precedence, ?? is 5th (quite low), so carefully use parenthesis if needed
 let height = null;
 let width = undefined;
 let area = (height ?? 100) * (width ?? 50);
 alert(area); // 5000
+*/
+
+// Limitation of ?? - forbidden to use with && and || for safety reason
+let x = 1 && 2 ?? 3; // syntax error
+let x = (1 && 2) ?? 3; // use parenthesis as work around
+alert(x); // 2
