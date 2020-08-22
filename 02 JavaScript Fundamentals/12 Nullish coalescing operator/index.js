@@ -18,5 +18,8 @@ alert(height || 100); // 100, || returns the first TRUTHY value
 alert(height ?? 100); // 0, || returns the first DEFINED value
 */
 
-
-
+// Precedence, ?? is 5th (quite low), so carefully use parenthesis if needed
+let height = null;
+let width = undefined;
+let area = (height ?? 100) * (width ?? 50);
+alert(area); // 5000
