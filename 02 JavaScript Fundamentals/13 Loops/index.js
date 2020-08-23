@@ -24,10 +24,26 @@ do {
   alert(i);
   i++;
 } while (i < 3);
-*/
 
 // for loop with inline variable declaration
 for (let i = 0; i < 3; i++) {
   // (begin; condition; step);
   alert(i);
+}
+
+// Skipped parts
+let i = 0;
+for (i = 0; i < 3; i++) {
+  alert(i); // 0, 1, 2
+}
+alert(i); // 3
+
+let i = 0;
+for (; i < 3; ) {
+  alert(i++); // 0, 1, 2
+}
+
+// removing anything to create infinite loop
+for (;;) {
+  alert("hello");
 }
