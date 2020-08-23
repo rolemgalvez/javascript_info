@@ -47,3 +47,13 @@ for (; i < 3; ) {
 for (;;) {
   alert("hello");
 }
+*/
+
+// Breaking the loop
+let sum = 0;
+while (true) {
+  let value = +prompt("Enter a number", "");
+  if (!value) break;
+  sum += value;
+}
+alert(sum);
