@@ -67,7 +67,6 @@ for (let i = 0; i < 9; i++) {
 for (let i = 0; i < 9; i++) {
   (i % 2 == 0) ? alert(i) : continue; // syntax
 }
-*/
 
 // Label for breaking/continuing in a nested loop
 sampleLabel: for (let i = 0; i < 3; i++) {
@@ -81,3 +80,10 @@ sampleLabel: for (let i = 0; i < 3; i++) {
   }
 }
 alert("Done!");
+*/
+
+// TASK 1: Last loop value
+let i = 3;
+while (i) {
+  alert(i--); // 1, it's the last value to alert
+}
