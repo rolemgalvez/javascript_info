@@ -80,10 +80,18 @@ sampleLabel: for (let i = 0; i < 3; i++) {
   }
 }
 alert("Done!");
-*/
 
 // TASK 1: Last loop value
 let i = 3;
 while (i) {
   alert(i--); // 1, it's the last value to alert
 }
+
+// TASK 2: Which values does the while loop show?
+// The prefix form ++i
+let i = 0;
+while (++i < 5) alert(i); // 1, 2, 3, 4
+// The postfix form ++i
+let i = 0;
+while (i++ < 5) alert(i); // 1, 2, 3, 4, 5
+*/
