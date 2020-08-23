@@ -62,9 +62,22 @@ for (let i = 0; i < 9; i++) {
   if (i % 2 == 0) continue; // skip current iteration if condition is true
   alert(i); // printing only odd numbers -> 1, 3, 5, 7, 9
 }
-*/
 
 // Not using break/continue after the ? operator
 for (let i = 0; i < 9; i++) {
-  (i % 2 == 0) ? alert(i) : continue; // syntax error
+  (i % 2 == 0) ? alert(i) : continue; // syntax
 }
+*/
+
+// Label for breaking/continuing in a nested loop
+sampleLabel: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    let input = prompt(`Value at coordinates (${i}, ${j})`, "");
+
+    // if empty or cancelled, break out of the both loops
+    if (!input) break sampleLabel;
+
+    // do something with the value
+  }
+}
+alert("Done!");
