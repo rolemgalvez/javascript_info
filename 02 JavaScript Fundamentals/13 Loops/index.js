@@ -56,10 +56,15 @@ while(true) {
   sum += value;
 }
 alert(sum)
-*/
 
 // Continue to next iteration
 for (let i = 0; i < 9; i++) {
   if (i % 2 == 0) continue; // skip current iteration if condition is true
   alert(i); // printing only odd numbers -> 1, 3, 5, 7, 9
+}
+*/
+
+// Not using break/continue after the ? operator
+for (let i = 0; i < 9; i++) {
+  (i % 2 == 0) ? alert(i) : continue; // syntax error
 }
