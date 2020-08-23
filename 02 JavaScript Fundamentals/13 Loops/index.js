@@ -47,13 +47,19 @@ for (; i < 3; ) {
 for (;;) {
   alert("hello");
 }
-*/
 
 // Breaking the loop
 let sum = 0;
-while (true) {
+while(true) {
   let value = +prompt("Enter a number", "");
   if (!value) break;
   sum += value;
 }
-alert(sum);
+alert(sum)
+*/
+
+// Continue to next iteration
+for (let i = 0; i < 9; i++) {
+  if (i % 2 == 0) continue; // skip current iteration if condition is true
+  alert(i); // printing only odd numbers -> 1, 3, 5, 7, 9
+}
