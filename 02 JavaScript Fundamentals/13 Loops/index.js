@@ -94,10 +94,17 @@ while (++i < 5) alert(i); // 1, 2, 3, 4
 // The postfix form ++i
 let i = 0;
 while (i++ < 5) alert(i); // 1, 2, 3, 4, 5
-*/
 
 // TASK 3: Which values get shown by the "for" loop?
 // The postfix form:
 for (let i = 0; i < 5; i++) alert(i); // 0, 1, 2, 3, 4
 // The prefix form:
 for (let i = 0; i < 5; ++i) alert(i); // 0, 1, 2, 3, 4
+*/
+
+// TASK 4: Output even numbers in the loop
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    alert(i);
+  }
+}
