@@ -107,8 +107,14 @@ for (let i = 2; i <= 10; i++) {
     alert(i);
   }
 }
- */
 
 // TASK 5: Replace "for" with "while"
 let i = 0;
 while (i < 3) alert(`number ${i++}!`);
+*/
+
+// TASK 6: Repeat until the input is correct
+let input;
+do {
+  input = +prompt("Enter number greater than 100", 0);
+} while (input <= 100 && input);
