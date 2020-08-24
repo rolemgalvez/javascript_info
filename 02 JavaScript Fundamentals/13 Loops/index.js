@@ -100,7 +100,6 @@ while (i++ < 5) alert(i); // 1, 2, 3, 4, 5
 for (let i = 0; i < 5; i++) alert(i); // 0, 1, 2, 3, 4
 // The prefix form:
 for (let i = 0; i < 5; ++i) alert(i); // 0, 1, 2, 3, 4
-*/
 
 // TASK 4: Output even numbers in the loop
 for (let i = 2; i <= 10; i++) {
@@ -108,3 +107,8 @@ for (let i = 2; i <= 10; i++) {
     alert(i);
   }
 }
+ */
+
+// TASK 5: Replace "for" with "while"
+let i = 0;
+while (i < 3) alert(`number ${i++}!`);
