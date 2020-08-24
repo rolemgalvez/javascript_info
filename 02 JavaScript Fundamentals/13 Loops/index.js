@@ -95,3 +95,9 @@ while (++i < 5) alert(i); // 1, 2, 3, 4
 let i = 0;
 while (i++ < 5) alert(i); // 1, 2, 3, 4, 5
 */
+
+// TASK 3: Which values get shown by the "for" loop?
+// The postfix form:
+for (let i = 0; i < 5; i++) alert(i); // 0, 1, 2, 3, 4
+// The prefix form:
+for (let i = 0; i < 5; ++i) alert(i); // 0, 1, 2, 3, 4
