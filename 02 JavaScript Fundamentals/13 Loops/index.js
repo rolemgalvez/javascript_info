@@ -111,10 +111,19 @@ for (let i = 2; i <= 10; i++) {
 // TASK 5: Replace "for" with "while"
 let i = 0;
 while (i < 3) alert(`number ${i++}!`);
-*/
 
 // TASK 6: Repeat until the input is correct
 let input;
 do {
   input = +prompt("Enter number greater than 100", 0);
 } while (input <= 100 && input);
+*/
+
+// TASK 7: Output prime numbers
+let n = +prompt("Enter value for n", 0);
+nextPrime: for (let i = 2; i <= n; i++) {
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) continue nextPrime;
+  }
+  alert(i);
+}
