@@ -39,7 +39,6 @@ switch (+a) {
   default:
     alert("This will not run");
 }
-*/
 
 // Grouping of cases
 let a = 3;
@@ -53,4 +52,21 @@ switch (a) {
     break;
   default:
     alert("This is default broo");
+}
+*/
+
+// Type Matters
+let number = "3";
+switch(number) {
+  case "1":
+    alert("This is string 1");
+    break;
+  case "2":
+    alert("This is string 2");
+    break;
+  case 3:
+    alert("This is number 3");
+    break;
+  default:
+    alert("No match found");
 }
