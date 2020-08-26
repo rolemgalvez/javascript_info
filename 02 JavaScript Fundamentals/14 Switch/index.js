@@ -28,7 +28,6 @@ switch (a) {
   default:
     alert("I don't kow such values");
 }
-*/
 
 // Switch allows arbitrary expressions
 let a = "1";
@@ -39,4 +38,19 @@ switch (+a) {
     break;
   default:
     alert("This will not run");
+}
+*/
+
+// Grouping of cases
+let a = 3;
+switch (a) {
+  case 2:
+    alert("This is 2");
+    break;
+  case 3:
+  case 4:
+    alert("This is 4");
+    break;
+  default:
+    alert("This is default broo");
 }
