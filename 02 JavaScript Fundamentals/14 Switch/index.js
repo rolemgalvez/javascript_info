@@ -53,7 +53,6 @@ switch (a) {
   default:
     alert("This is default broo");
 }
-*/
 
 // Type Matters
 let number = "3";
@@ -69,4 +68,20 @@ switch(number) {
     break;
   default:
     alert("No match found");
+}
+*/
+
+// TASK 1: Rewrite the "switch" into an "if"
+let browser = prompt("Enter a browser", "");
+if (browser == "Edge") {
+  alert("Edge!");
+} else if (
+  browser == "Chrome" ||
+  browser == "Firefox" ||
+  browser == "Safari" ||
+  browser == "Opera"
+) {
+  alert("Alright!");
+} else {
+  alert("Is it okay?");
 }
