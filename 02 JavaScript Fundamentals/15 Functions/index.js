@@ -50,7 +50,6 @@ function showMessage() {
 alert(username); // Juan
 showMessage(); // Bob
 alert(username); // Juan
-*/
 
 // Parameters
 function showMessage(from, text) {
@@ -59,3 +58,14 @@ function showMessage(from, text) {
 
 showMessage("Juan", "Henlo"); // Juan: Henlo
 showMessage("Pedro", "Yowlo"); // Pedro: Yowlo
+*/
+
+// Parameter changing only locally
+function showMessage(from, text) {
+  from = `**${from}**`;
+  alert(`${from}: ${text}`);
+}
+
+let from = "Juan";
+showMessage(from, "Henlo"); // **Juan**: Henlo
+alert(from); // Juan, because it's only modified locally in showMessage()
