@@ -14,7 +14,6 @@ function showMessage() {
 
 showMessage();
 alert(message); // Error
-*/
 
 // Outer Variable
 let username = "Juan";
@@ -25,3 +24,17 @@ function showMessage() {
 }
 
 showMessage();
+*/
+
+// Modifying outer variable
+let username = "Juan";
+
+function showMessage() {
+  username = "Bob";
+  let message = "Hello " + username;
+  alert(message);
+}
+
+alert(username); // Juan
+showMessage(); // Bob
+alert(username); // Juan
