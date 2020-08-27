@@ -5,7 +5,6 @@ function showMessage() {
 
 showMessage();
 showMessage();
-*/
 
 // Local Variable
 function showMessage() {
@@ -15,3 +14,14 @@ function showMessage() {
 
 showMessage();
 alert(message); // Error
+*/
+
+// Outer Variable
+let username = "Juan";
+
+function showMessage() {
+  let message = "Hello " + username;
+  alert(message);
+}
+
+showMessage();
