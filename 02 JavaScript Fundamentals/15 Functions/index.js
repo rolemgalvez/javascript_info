@@ -24,13 +24,26 @@ function showMessage() {
 }
 
 showMessage();
-*/
 
 // Modifying outer variable
 let username = "Juan";
 
 function showMessage() {
   username = "Bob";
+  let message = "Hello " + username;
+  alert(message);
+}
+
+alert(username); // Juan
+showMessage(); // Bob
+alert(username); // Bob
+*/
+
+// Shadowing global variable
+let username = "Juan";
+
+function showMessage() {
+  let username = "Bob";
   let message = "Hello " + username;
   alert(message);
 }
