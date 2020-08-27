@@ -37,7 +37,6 @@ function showMessage() {
 alert(username); // Juan
 showMessage(); // Bob
 alert(username); // Bob
-*/
 
 // Shadowing global variable
 let username = "Juan";
@@ -51,3 +50,12 @@ function showMessage() {
 alert(username); // Juan
 showMessage(); // Bob
 alert(username); // Juan
+*/
+
+// Parameters
+function showMessage(from, text) {
+  alert(`${from}: ${text}`);
+}
+
+showMessage("Juan", "Henlo"); // Juan: Henlo
+showMessage("Pedro", "Yowlo"); // Pedro: Yowlo
