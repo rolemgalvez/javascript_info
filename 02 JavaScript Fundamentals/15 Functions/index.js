@@ -68,7 +68,6 @@ function showMessage(from, text) {
 let from = "Juan";
 showMessage(from, "Henlo"); // **Juan**: Henlo
 alert(from); // Juan, because it's only modified locally in showMessage()
-*/
 
 // Default values
 function showMessage(from, text = "default text") {
@@ -78,4 +77,16 @@ function showMessage(from, text = "default text") {
 showMessage("Juan");
 showMessage("Juan", "Henlo");
 showMessage(); // undefined if no default value given
+*/
 
+// Sample Complex Default Values
+function showMessage(from, text = anotherFunction()) {
+  // text will have value from another function
+  alert(`${from}: ${text}`);
+}
+
+function anotherFunction() {
+  return 1 + 1 == 2 ? "two" : "unknown";
+}
+
+showMessage("Juan");
