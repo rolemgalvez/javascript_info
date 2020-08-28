@@ -58,7 +58,6 @@ function showMessage(from, text) {
 
 showMessage("Juan", "Henlo"); // Juan: Henlo
 showMessage("Pedro", "Yowlo"); // Pedro: Yowlo
-*/
 
 // Parameter changing only locally
 function showMessage(from, text) {
@@ -69,3 +68,14 @@ function showMessage(from, text) {
 let from = "Juan";
 showMessage(from, "Henlo"); // **Juan**: Henlo
 alert(from); // Juan, because it's only modified locally in showMessage()
+*/
+
+// Default values
+function showMessage(from, text = "default text") {
+  alert(`${from}: ${text}`);
+}
+
+showMessage("Juan");
+showMessage("Juan", "Henlo");
+showMessage(); // undefined if no default value given
+
