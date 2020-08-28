@@ -106,7 +106,6 @@ function showMessageV2(text) {
 
 showMessageV1();
 showMessageV2();
-*/
 
 // Using Nullish Coalescing Operator (??)
 function showCount(count) {
@@ -116,3 +115,29 @@ function showCount(count) {
 showCount(0); // 0
 showCount(null); // unknown
 showCount(); // unknown
+
+// Returning Value
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(2, 3);
+alert(result);
+*/
+
+// Multiple return
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm("Do you have permission from your parents?");
+  }
+}
+
+let age = prompt("How old are you?", 18);
+
+if (checkAge(age)) {
+  alert("Access Granted");
+} else {
+  alert("Access Denied");
+}
