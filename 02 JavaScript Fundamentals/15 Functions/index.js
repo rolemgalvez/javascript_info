@@ -89,7 +89,6 @@ function anotherFunction() {
 }
 
 showMessage("Juan");
-*/
 
 // Alternative default parameter
 function showMessageV1(text) {
@@ -107,3 +106,13 @@ function showMessageV2(text) {
 
 showMessageV1();
 showMessageV2();
+*/
+
+// Using Nullish Coalescing Operator (??)
+function showCount(count) {
+  alert(count ?? "unknown");
+}
+
+showCount(0); // 0
+showCount(null); // unknown
+showCount(); // unknown
