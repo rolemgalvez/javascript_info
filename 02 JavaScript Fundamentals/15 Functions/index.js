@@ -77,7 +77,6 @@ function showMessage(from, text = "default text") {
 showMessage("Juan");
 showMessage("Juan", "Henlo");
 showMessage(); // undefined if no default value given
-*/
 
 // Sample Complex Default Values
 function showMessage(from, text = anotherFunction()) {
@@ -90,3 +89,21 @@ function anotherFunction() {
 }
 
 showMessage("Juan");
+*/
+
+// Alternative default parameter
+function showMessageV1(text) {
+  if (text == undefined) {
+    text = "empty text";
+  }
+  alert(text);
+}
+
+function showMessageV2(text) {
+  // using ||
+  text = text || "empty text";
+  alert(text);
+}
+
+showMessageV1();
+showMessageV2();
