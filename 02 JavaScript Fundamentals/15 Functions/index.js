@@ -124,7 +124,6 @@ function sum(a, b) {
 let result = sum(2, 3);
 alert(result);
 
-*/
 // Multiple return
 function checkAge(age) {
   if (age >= 18) {
@@ -134,13 +133,13 @@ function checkAge(age) {
   }
 }
 
-// let age = prompt("How old are you?", 18);
+let age = prompt("How old are you?", 18);
 
-// if (checkAge(age)) {
-//   alert("Access Granted");
-// } else {
-//   alert("Access Denied");
-// }
+if (checkAge(age)) {
+  alert("Access Granted");
+} else {
+  alert("Access Denied");
+}
 
 // Return without a value
 function showMovie(age) {
@@ -151,3 +150,15 @@ function showMovie(age) {
   alert("Showing you the movie");
 }
 showMovie(3);
+*/
+
+// Empty or without return value
+function doNothing() {
+  /* empty */
+}
+alert(doNothing() === undefined); // true
+
+function returnNothing() {
+  return;
+}
+alert(returnNothing() === undefined); // true
