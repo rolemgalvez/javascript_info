@@ -150,11 +150,11 @@ function showMovie(age) {
   alert("Showing you the movie");
 }
 showMovie(3);
-*/
+
 
 // Empty or without return value
 function doNothing() {
-  /* empty */
+  // empty
 }
 alert(doNothing() === undefined); // true
 
@@ -162,3 +162,36 @@ function returnNothing() {
   return;
 }
 alert(returnNothing() === undefined); // true
+*/
+
+// Using Function as Comment
+
+// Version 1: Do all things in one function
+function showPrime1(n) {
+  nextPrime: for (let i = 2; i < n; i++) {
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
+
+    alert(i);
+  }
+}
+
+showPrime1(10);
+
+// Version 2: Separation of functions
+function showPrime2(n) {
+  for (let i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+    alert(i);
+  }
+}
+
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i == 0) return false;
+  }
+  return true;
+}
+
+showPrime2(10);
