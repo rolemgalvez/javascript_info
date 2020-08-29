@@ -162,7 +162,6 @@ function returnNothing() {
   return;
 }
 alert(returnNothing() === undefined); // true
-*/
 
 // Using Function as Comment
 
@@ -195,3 +194,17 @@ function isPrime(n) {
 }
 
 showPrime2(10);
+*/
+
+// TASK 2: Rewrite the function using '?' or '||'
+function checkAge1(age) {
+  return age > 18 || confirm("Did parents allow you?") ? true : false;
+}
+
+function checkAge2(age) {
+  return age > 18 ? true : confirm("Did parents allow you?");
+}
+
+function checkAge(age) {
+  return age > 18 || confirm("Did parents allow you?");
+}
