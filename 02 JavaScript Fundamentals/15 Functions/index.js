@@ -194,7 +194,6 @@ function isPrime(n) {
 }
 
 showPrime2(10);
-*/
 
 // TASK 2: Rewrite the function using '?' or '||'
 function checkAge1(age) {
@@ -208,3 +207,11 @@ function checkAge2(age) {
 function checkAge(age) {
   return age > 18 || confirm("Did parents allow you?");
 }
+*/
+
+// TASK 3: Function min(a, b)
+function min(a, b) {
+  return a < b ? a : b;
+}
+
+alert(min(11, 2));
