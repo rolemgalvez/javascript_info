@@ -1,9 +1,12 @@
+/* */
 // Function Declaration'
 function sayHi() {
-    alert("Hello");
+  alert("Hello");
 }
 
-// Function Expression
-let sayHi = function() {
-    alert("Hello");
-}
+// // Function Expression
+// let sayHi = function () {
+//   alert("Hello");
+// };
+
+alert(sayHi);
