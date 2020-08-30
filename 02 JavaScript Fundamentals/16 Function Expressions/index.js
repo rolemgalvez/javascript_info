@@ -10,7 +10,7 @@ let sayHi = function () {
 };
 
 alert(sayHi);
- */
+
 
 // Copying Function
 function sayHi() {
@@ -18,6 +18,15 @@ function sayHi() {
 }
 
 let func = sayHi;
+
+func(); // Hello
+sayHi(); // Hello
+ */
+
+// Copying Function through Expression
+let sayHi = function () {
+  alert("Hello");
+};
 
 func(); // Hello
 sayHi(); // Hello
