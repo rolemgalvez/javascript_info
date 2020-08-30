@@ -215,8 +215,6 @@ function min(a, b) {
 
 alert(min(11, 2));
 
-*/
-
 // TASK 4: Function pow(x,n)
 function pow(x, n) {
   let result = x;
@@ -233,3 +231,4 @@ if (n < 1) {
 } else {
   alert(pow(x, n));
 }
+*/
