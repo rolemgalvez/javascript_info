@@ -21,7 +21,6 @@ let func = sayHi;
 
 func(); // Hello
 sayHi(); // Hello
- */
 
 // Copying Function through Expression
 let sayHi = function () {
@@ -30,3 +29,21 @@ let sayHi = function () {
 
 func(); // Hello
 sayHi(); // Hello
+ */
+
+// Callback functions
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+function showOk() {
+  alert("You agreed.");
+}
+
+function showCancel() {
+  alert("You cancelled the execution");
+}
+
+// Usage of ask()
+ask("Do you agree?", showOk, showCancel);
