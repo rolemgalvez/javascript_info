@@ -29,9 +29,9 @@ let sayHi = function () {
 
 func(); // Hello
 sayHi(); // Hello
- */
+ 
 
-// Callback functions
+// Callback functions or Callbacks
 function ask(question, yes, no) {
   if (confirm(question)) yes();
   else no();
@@ -47,3 +47,20 @@ function showCancel() {
 
 // Usage of ask()
 ask("Do you agree?", showOk, showCancel);
+*/
+
+// Callback using Function Expression
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function () {
+    alert("You agreed.");
+  },
+  function () {
+    alert("You cancelled the execution");
+  }
+);
