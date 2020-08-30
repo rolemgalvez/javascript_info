@@ -207,7 +207,6 @@ function checkAge2(age) {
 function checkAge(age) {
   return age > 18 || confirm("Did parents allow you?");
 }
-*/
 
 // TASK 3: Function min(a, b)
 function min(a, b) {
@@ -215,3 +214,17 @@ function min(a, b) {
 }
 
 alert(min(11, 2));
+*/
+
+// TASK 4: Function pow(x,n)
+function pow(x, n) {
+  return x ** n;
+}
+
+let x = prompt("Enter value for x", 0);
+let n = prompt("Enter value for n", 0);
+if (n < 1) {
+  alert(`${n} is not supported. Enter positive integer number`);
+} else {
+  alert(pow(x, n));
+}
