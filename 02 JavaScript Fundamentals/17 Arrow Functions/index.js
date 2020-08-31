@@ -15,7 +15,6 @@ alert(double(4)); // 8
 // No argument
 let sayHi = () => alert("Hello");
 sayHi();
-*/
 
 // Arrow Function same way as Function Expression
 let age = +prompt("How old are you?", 18);
@@ -23,3 +22,13 @@ let age = +prompt("How old are you?", 18);
 let welcome = age < 18 ? () => alert("Hello!") : () => alert("Greetings!");
 
 welcome();
+*/
+
+// Multiline Arrow Function
+let sum = (a, b) => {
+  // need curly braces
+  let result = a + b;
+  return result; // return is required if there is curly braces
+};
+
+alert(sum(1, 2)); // 3
