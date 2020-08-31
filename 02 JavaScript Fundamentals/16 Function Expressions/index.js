@@ -47,7 +47,6 @@ function showCancel() {
 
 // Usage of ask()
 ask("Do you agree?", showOk, showCancel);
-*/
 
 // Callback using Function Expression
 function ask(question, yes, no) {
@@ -64,3 +63,21 @@ ask(
     alert("You cancelled the execution");
   }
 );
+*/
+
+// Using Function Expression to be available outside code block
+let age = +prompt("How old are you?", 18);
+
+let welcome;
+
+if (age < 18) {
+  welcome = function () {
+    alert("Welcome!");
+  };
+} else {
+  welcome = function () {
+    alert("Greetings!");
+  };
+}
+
+welcome();
