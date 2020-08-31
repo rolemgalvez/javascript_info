@@ -63,7 +63,6 @@ ask(
     alert("You cancelled the execution");
   }
 );
-*/
 
 // Using Function Expression to be available outside code block
 let age = +prompt("How old are you?", 18);
@@ -71,13 +70,28 @@ let age = +prompt("How old are you?", 18);
 let welcome;
 
 if (age < 18) {
-  welcome = function () {
-    alert("Welcome!");
-  };
+  welcome = let age = +prompt("How old are you?", 18);
+
+  let welcome;
 } else {
   welcome = function () {
     alert("Greetings!");
   };
 }
+
+welcome();
+*/
+
+// Simplified Version
+let age = +prompt("How old are you?", 18);
+
+let welcome =
+  age < 18
+    ? function () {
+        alert("Welcome!");
+      }
+    : function () {
+        alert("Greetings!");
+      };
 
 welcome();
