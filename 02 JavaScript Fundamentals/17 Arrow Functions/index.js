@@ -31,7 +31,6 @@ let sum = (a, b) => {
 };
 
 alert(sum(1, 2)); // 3
-*/
 
 // TASK: Rewrite with arrow functions
 function ask(question, yes, no) {
@@ -44,3 +43,5 @@ ask(
   () => alert("You agreed."),
   () => alert("You cancelled the execution.")
 );
+
+*/
