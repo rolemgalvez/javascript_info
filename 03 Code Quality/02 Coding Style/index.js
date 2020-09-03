@@ -1,4 +1,4 @@
-/* */
+/* 
 let n = -1;
 
 if (n < 0) {
@@ -22,4 +22,16 @@ if (
 
 function letTheGameBegin() {
   alert("Let's go!");
+}
+*/
+
+// Indents (Horizontal & Vertical)
+function pow(x, n) {
+  let result = 1;
+
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
 }
