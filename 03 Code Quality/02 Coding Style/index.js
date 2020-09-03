@@ -12,3 +12,14 @@ let str = `
   preferred division. This is possible with backtick quotes.
 `;
 
+if (
+  age === 21 &&
+  phrase === 'Abra Kadabra Open Sesame' &&
+  skill === 'blood lust controller'
+) {
+  letTheGameBegin();
+}
+
+function letTheGameBegin() {
+  alert("Let's go!");
+}
