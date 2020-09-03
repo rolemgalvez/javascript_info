@@ -1,4 +1,4 @@
-/* */
+/* 
 // debugger
 function hello(name) {
   let message = `Hello ${name}`;
@@ -7,3 +7,9 @@ function hello(name) {
 }
 
 hello("Juan");
+*/
+
+// Logging
+for (let i = 0; i < 5; i++) {
+  console.log("value, ", i);
+}
