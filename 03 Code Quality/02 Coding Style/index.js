@@ -23,13 +23,56 @@ if (
 function letTheGameBegin() {
   alert("Let's go!");
 }
-*/
 
 // Indents (Horizontal & Vertical)
 function pow(x, n) {
   let result = 1;
 
   for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+*/
+
+// Nesting Levels
+// OK
+for (let i = 0; i < 5; i++) {
+  if (i % 2 == 0) {
+    alert("even!");
+  }
+}
+// Better
+for (let j = 0; j < 5; i++) {
+  if (j % 2 != 0) continue;
+  alert("even");
+}
+
+// OK
+function pow1(x, n) {
+  if (n < 0) {
+    alert("Negative 'n' not supported");
+  } else {
+    let result = 1;
+
+    for (let k = 0; k < n; k++) {
+      result *= x;
+    }
+
+    return result;
+  }
+}
+// Better
+function pow2(x, n) {
+  if (n < 0) {
+    alert("Negative 'n' not supported");
+    return;
+  }
+
+  let result = 1;
+
+  for (let l = 0; l < n; l++) {
     result *= x;
   }
 
