@@ -80,4 +80,19 @@ function pow2(x, n) {
 
 */
 
-// Functions Placement - Code first then func
+// Functions Placement - Code first then function
+let sum = calcSum(1, 4);
+showName("Juan");
+greeting();
+
+function calcSum(n1, n2) {
+  return n1 + n2;
+}
+
+function showName(name) {
+  alert(name);
+}
+
+function greeting() {
+  alert("Henlo");
+}
