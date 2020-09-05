@@ -34,7 +34,6 @@ function pow(x, n) {
 
   return result;
 }
-*/
 
 // Nesting Levels
 // OK
@@ -78,3 +77,7 @@ function pow2(x, n) {
 
   return result;
 }
+
+*/
+
+// Functions Placement - Code first then func
