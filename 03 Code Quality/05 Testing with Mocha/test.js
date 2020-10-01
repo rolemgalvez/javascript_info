@@ -28,6 +28,9 @@ describe("pow", function () {
   it("for non-integer n the result is NaN", function () {
     assert.isNaN(pow(2, 1.5));
   });
+  it.only("5 raise to 2 is 25", function () {
+    assert.equal(pow(5, 2), 25);
+  });
 });
 
 mocha.run();
