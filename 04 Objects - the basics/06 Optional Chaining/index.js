@@ -13,7 +13,6 @@ user?.sayHi(x++); // ignores sayHi(x++)
 
 alert(x); // 0, value not incremented
 
-*/
 
 // ?. Other variants
 let user1 = {
@@ -26,3 +25,18 @@ let user2 = {};
 
 user1.admin?.(); // I am admin
 user2.admin?.();
+
+*/
+
+let user1 = {
+  firstName: "Juan",
+};
+
+let user2 = null;
+
+let key = "firstName";
+
+alert(user1?.[key]); // John
+alert(user2?.[key]); // undefined
+
+
